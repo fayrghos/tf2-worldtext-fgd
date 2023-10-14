@@ -1,0 +1,45 @@
+@include "base.fgd"
+
+// This FGD adds point_worldtext entities to TF2.
+// Only works in Hammer++.
+
+@PointClass base(Targetname, Parentname, Angles) worldtext() = point_worldtext
+[
+	message(string) : "Entity Message" : "Hello World"
+	textsize(float) : "Text Size" : 10
+	color(color255) : "Color" : "255 255 255 255"
+	font(choices) : "Font" : 0 =
+	[
+		0	: "TF2 Build"
+		1	: "TF2 Build (no outline)"
+		2	: "TF2"
+		3	: "TF2 (no outline)"
+		4	: "Liberation Sans"
+		5	: "Liberation Sans (no outline)"
+		6	: "TF2 Professor"
+		7	: "TF2 Professor (no outline)"
+		8	: "Roboto Mono"
+		9	: "Roboto Mono (no outline)"
+		10	: "Roboto Mono (shadow only)"
+		11	: "Roboto Mono (green glow)"
+		12	: "TF2 Build (soft edges)"
+	]
+	orientation(choices) : "Orientation" : 0 =
+	[
+		0	: "Stationary text"
+		1	: "Always face the player"
+		2	: "Ignores pitch"
+	]
+	textspacingx(float) : "Text Spacing X" : 0
+	textspacingy(float) : "Text Spacing Y" : 0
+	rainbow(boolean) : "Rainbow" : 0
+
+	input SetText(string)
+	input SetTextSize(float)
+	input SetTextSpacingX(float)
+	input SetTextSpacingY(float)
+	input SetColor(color255)
+	input SetFont(integer)
+	input SetOrientation(integer)
+	input SetRainbow(integer)
+]
