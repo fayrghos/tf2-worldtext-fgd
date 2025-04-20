@@ -3,6 +3,9 @@ This FGD adds full support for `point_worldtext` entities to Team Fortress 2, in
 
 Only works in [Hammer++](https://developer.valvesoftware.com/wiki/Hammer%2B%2B).
 
+> [!TIP]
+> Even though this is still fully functional, i highly recommend that you use the [BAMF](https://bamf.tf) FGD instead.
+
 ## About
 Since Hammer++ introduced `editor_text` entities to display 3D text in the editor, we can make use of them to make a basic preview of worldtexts. Some features are not visible in the editor, but still functional in-game.
 
